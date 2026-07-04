@@ -1,0 +1,78 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+.pytest_cache/
+.mypy_cache/
+
+# Virtual Environment
+venv/
+.env
+.env.*
+
+# ==========================
+# Node / React / Vite
+# ==========================
+node_modules/
+frontend/node_modules/
+
+# Build folders
+dist/
+build/
+frontend/dist/
+
+# ==========================
+# VS Code
+# ==========================
+.vscode/
+
+# ==========================
+# OS Files
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Storage (uploaded/generated files)
+# ==========================
+storage/uploaded_files/*
+storage/processed_outputs/*
+
+# Keep the folders
+!storage/uploaded_files/.gitkeep
+!storage/processed_outputs/.gitkeep
+
+# ==========================
+# Logs
+# ==========================
+*.log
+logs/
+
+# ==========================
+# Temporary files
+# ==========================
+*.tmp
+*.temp
+*.swp
+
+# ==========================
+# IDE
+# ==========================
+.idea/
+
+# ==========================
+# Database
+# ==========================
+*.sqlite3
+*.db
+
+# ==========================
+# Secrets
+# ==========================
+.env.local
+.env.development
+.env.production

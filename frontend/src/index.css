@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-surface-50 text-slate-800 antialiased;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-5 py-2.5 bg-primary-600 text-white rounded-xl font-semibold
+      hover:bg-primary-700 hover:shadow-card-hover
+      active:scale-[0.98] transition-all duration-200 shadow-card;
+  }
+  .btn-secondary {
+    @apply px-5 py-2.5 bg-white border border-slate-200 text-slate-700 rounded-xl font-medium
+      hover:bg-slate-50 hover:border-slate-300 hover:shadow-card
+      active:scale-[0.98] transition-all duration-200;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-card border border-slate-100 p-6
+      transition-all duration-200 hover:shadow-card-hover hover:border-slate-200/60;
+  }
+  .card-elevated {
+    @apply card shadow-[0_4px_12px_-2px_rgba(0,0,0,0.06)];
+  }
+  .nav-link {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-400 font-medium
+      hover:bg-white/5 hover:text-white transition-colors duration-200;
+  }
+  .nav-link-active {
+    @apply nav-link bg-primary-600/90 text-white hover:bg-primary-600;
+  }
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-100 rounded-full;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full hover:bg-slate-400;
+}

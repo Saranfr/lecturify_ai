@@ -1,0 +1,4 @@
+# Place your training datasets here:
+# - MCQ: SciQ CSV, SQuAD JSON, RACE CSV
+# - Bloom: JSON with question, bloom_level
+# Auto-detected at startup by dataset_loader.py
