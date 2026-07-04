@@ -96,7 +96,7 @@ Edit `backend/config.py`:
 ![Upload Page](assets/upload-page.png)
 
 ### Analytics
-![Analytics](assets/analytics.png)
+![Analytics](assets/analytics-page.png)
 
 ### MCQ Generation from Video
 ![Video](assets/mcq-from-video.png)
